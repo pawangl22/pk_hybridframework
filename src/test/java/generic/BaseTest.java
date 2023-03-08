@@ -27,7 +27,7 @@ public class BaseTest {
 		}
 		
 		Reporter.log("Enter the URL: "+url, true);
-		driver.get("http://www.google.com");
+		driver.get(url);
 		driver.manage().window().maximize();
 		
 		long time = Long.parseLong(timeout);

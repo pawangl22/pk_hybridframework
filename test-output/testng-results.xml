@@ -5,24 +5,24 @@
       <![CDATA[Open the browser Chrome]]>
     </line>
     <line>
-      <![CDATA[Enter the URL: http://www.google.com]]>
+      <![CDATA[Enter the URL: https://demo.actitime.com/login.do]]>
     </line>
     <line>
-      <![CDATA[Google]]>
-    </line>
-    <line>
-      <![CDATA[XL: Pawan]]>
+      <![CDATA[ActiTime Home page is displayed]]>
     </line>
     <line>
       <![CDATA[Close the browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-03-08T09:12:47 IST" name="Suite" finished-at="2023-03-08T09:12:56 IST" duration-ms="8978">
+  <suite started-at="2023-03-08T12:24:57 IST" name="Suite" finished-at="2023-03-08T12:25:11 IST" duration-ms="13826">
     <groups>
+      <group name="smoke">
+        <method signature="ActiTimeloginTest.VerifyActiTimeLogin()[pri:1, instance:scripts.ActiTimeloginTest@1623b78d]" name="VerifyActiTimeLogin" class="scripts.ActiTimeloginTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-03-08T09:12:47 IST" name="Test" finished-at="2023-03-08T09:12:56 IST" duration-ms="8978">
-      <class name="scripts.Test1">
-        <test-method is-config="true" signature="openApp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.Test1@1623b78d]" started-at="2023-03-08T09:12:47 IST" name="openApp" finished-at="2023-03-08T09:12:54 IST" duration-ms="6795" status="PASS">
+    <test started-at="2023-03-08T12:24:57 IST" name="Test" finished-at="2023-03-08T12:25:11 IST" duration-ms="13826">
+      <class name="scripts.ActiTimeloginTest">
+        <test-method is-config="true" signature="openApp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.ActiTimeloginTest@1623b78d]" started-at="2023-03-08T12:24:57 IST" name="openApp" finished-at="2023-03-08T12:25:07 IST" duration-ms="9362" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[http://www.google.com]]>
+                <![CDATA[https://demo.actitime.com/login.do]]>
               </value>
             </param>
             <param index="2">
@@ -45,28 +45,25 @@
               <![CDATA[Open the browser Chrome]]>
             </line>
             <line>
-              <![CDATA[Enter the URL: http://www.google.com]]>
+              <![CDATA[Enter the URL: https://demo.actitime.com/login.do]]>
             </line>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="testA()[pri:0, instance:scripts.Test1@1623b78d]" started-at="2023-03-08T09:12:54 IST" name="testA" finished-at="2023-03-08T09:12:56 IST" duration-ms="1632" status="PASS">
+        <test-method signature="VerifyActiTimeLogin()[pri:1, instance:scripts.ActiTimeloginTest@1623b78d]" started-at="2023-03-08T12:25:07 IST" name="VerifyActiTimeLogin" finished-at="2023-03-08T12:25:11 IST" duration-ms="3982" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Google]]>
-            </line>
-            <line>
-              <![CDATA[XL: Pawan]]>
+              <![CDATA[ActiTime Home page is displayed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.Test1@1623b78d]" started-at="2023-03-08T09:12:56 IST" name="closeApp" finished-at="2023-03-08T09:12:56 IST" duration-ms="452" status="PASS">
+        </test-method> <!-- VerifyActiTimeLogin -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.ActiTimeloginTest@1623b78d]" started-at="2023-03-08T12:25:11 IST" name="closeApp" finished-at="2023-03-08T12:25:11 IST" duration-ms="432" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Close the browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- scripts.Test1 -->
+      </class> <!-- scripts.ActiTimeloginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

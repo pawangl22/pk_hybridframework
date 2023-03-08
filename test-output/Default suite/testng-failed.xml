@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day28.Practice7">
+      <class name="scripts.ActiTimeloginTest">
         <methods>
-          <include name="test"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+          <include name="VerifyActiTimeLogin"/>
         </methods>
-      </class> <!-- day28.Practice7 -->
+      </class> <!-- scripts.ActiTimeloginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
