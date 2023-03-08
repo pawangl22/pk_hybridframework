@@ -4,18 +4,23 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
+import generic.Excel;
 import pages.ActiTimeHomePage;
 import pages.ActiTimeLoginPage;
 
-public class ActiTimeloginTest extends BaseTest {
+public class ValidActiTimeLogin extends BaseTest {
 
-		@Test(priority=1, groups= {"smoke"})
-		public void VerifyActiTimeLogin() {
+		@Test(priority=1)
+		public void testValidLogin() {
+			
+		String un = Excel.getData("./data/input.xlsx", "VerifyActiTimeLogin", 1, 0);
+		String pw = Excel.getData("./data/input.xlsx", "VerifyActiTimeLogin", 1, 1);
+		
 		//Login UN Enter
 		ActiTimeLoginPage actiTimeLogin = new ActiTimeLoginPage(driver);
-		actiTimeLogin.setUserName("admin");
+		actiTimeLogin.setUserName(un);
 		//Login Pw Enter
-		actiTimeLogin.setPassword("manager");
+		actiTimeLogin.setPassword(pw);
 		//Click loginBTN
 		actiTimeLogin.clickLoginButton();
 		
